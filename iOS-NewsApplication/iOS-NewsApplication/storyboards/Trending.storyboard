@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VL1-W9-yZz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trending-->
+        <scene sceneID="Ydh-RP-rg5">
+            <objects>
+                <viewController id="bnW-UO-4sH" customClass="TrendingViewController" customModule="iOS_NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5b-eH-XkG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAX-pb-Fve">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Search Term" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-Ui-CKE">
+                                        <rect key="frame" x="20" y="45" width="124.5" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="H2O-EU-NN1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Search Term .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXa-Re-5MH">
+                                        <rect key="frame" x="20" y="88" width="374" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LwX-qZ-sqR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ljf-hf-Uqf" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="20" y="173" width="374" height="450"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nuK-Ui-CKE" firstAttribute="top" secondItem="oAX-pb-Fve" secondAttribute="top" constant="45" id="1ZO-lY-nWo"/>
+                                    <constraint firstAttribute="trailing" secondItem="PXa-Re-5MH" secondAttribute="trailing" constant="20" id="6YY-LO-G9b"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ljf-hf-Uqf" secondAttribute="trailing" constant="20" id="Dx5-Gp-gzc"/>
+                                    <constraint firstItem="nuK-Ui-CKE" firstAttribute="leading" secondItem="oAX-pb-Fve" secondAttribute="leading" constant="20" id="Gen-7b-ak9"/>
+                                    <constraint firstItem="PXa-Re-5MH" firstAttribute="leading" secondItem="oAX-pb-Fve" secondAttribute="leading" constant="20" id="Paz-Fn-2Zu"/>
+                                    <constraint firstItem="Ljf-hf-Uqf" firstAttribute="top" secondItem="PXa-Re-5MH" secondAttribute="bottom" constant="50" id="PhS-39-gxD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ljf-hf-Uqf" secondAttribute="bottom" constant="50" id="bK7-hc-uHT"/>
+                                    <constraint firstItem="PXa-Re-5MH" firstAttribute="top" secondItem="nuK-Ui-CKE" secondAttribute="bottom" constant="15" id="kxU-vl-Hm7"/>
+                                    <constraint firstItem="Ljf-hf-Uqf" firstAttribute="leading" secondItem="oAX-pb-Fve" secondAttribute="leading" constant="20" id="p8O-m0-dw1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oAX-pb-Fve" firstAttribute="top" secondItem="ide-lz-iXp" secondAttribute="top" id="3Jy-Zi-laf"/>
+                            <constraint firstItem="ide-lz-iXp" firstAttribute="trailing" secondItem="oAX-pb-Fve" secondAttribute="trailing" id="LSv-gA-Zpa"/>
+                            <constraint firstItem="oAX-pb-Fve" firstAttribute="leading" secondItem="ide-lz-iXp" secondAttribute="leading" id="mkv-5h-CEl"/>
+                            <constraint firstItem="ide-lz-iXp" firstAttribute="bottom" secondItem="oAX-pb-Fve" secondAttribute="bottom" id="rqj-Iq-1qs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ide-lz-iXp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trending" id="6gD-zM-keO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lineChartTrending" destination="Ljf-hf-Uqf" id="dpC-oB-5ae"/>
+                        <outlet property="searchWord" destination="PXa-Re-5MH" id="Ons-ko-q8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yly-8e-ezy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="114.50892857142857"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="Iml-x9-toS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VL1-W9-yZz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trending" image="trending-up" id="z51-Xu-6Mm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="66p-O6-VUw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bnW-UO-4sH" kind="relationship" relationship="rootViewController" id="ZGL-ze-70N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cs-si-3en" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trending-up" width="28" height="28"/>
+    </resources>
+</document>

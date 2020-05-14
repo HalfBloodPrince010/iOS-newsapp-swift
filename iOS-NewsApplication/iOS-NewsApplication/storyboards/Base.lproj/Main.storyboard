@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aKf-GP-CwM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="shL-bH-LKY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="vm3-5L-eTs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="2Wk-4J-yLt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxh-Df-uDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="-44"/>
+        </scene>
+        <!--Headlines-->
+        <scene sceneID="ihz-gc-bWR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Headlines" id="jR9-2B-jhA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Headlines" image="rectangle.split.3x3.fill" catalog="system" selectedImage="circle.grid.3x3.fill" id="Bdk-q8-rCh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxs-qY-kMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="-44"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="vWx-pg-U33">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trending" id="P8M-FI-YZl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trending" image="trending-up" id="GdB-WV-WeX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKu-Gt-3nY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="-44"/>
+        </scene>
+        <!--Bookmarks-->
+        <scene sceneID="WmK-O4-O8n">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bookmarks" id="L0d-eI-ZQ3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="bookmark.fill" catalog="system" selectedImage="bookmark.fill" id="7fM-JP-xgv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFq-IW-1tt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-44"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yvb-oM-uYo">
+            <objects>
+                <tabBarController id="aKf-GP-CwM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="cci-dO-VS2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vm3-5L-eTs" kind="relationship" relationship="viewControllers" id="RiM-16-UKI"/>
+                        <segue destination="jR9-2B-jhA" kind="relationship" relationship="viewControllers" id="8og-ug-47a"/>
+                        <segue destination="P8M-FI-YZl" kind="relationship" relationship="viewControllers" id="tW0-ci-UT6"/>
+                        <segue destination="L0d-eI-ZQ3" kind="relationship" relationship="viewControllers" id="1Dy-I6-JeK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUd-s3-Whl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="-472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="circle.grid.3x3.fill" catalog="system" width="128" height="112"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="rectangle.split.3x3.fill" catalog="system" width="128" height="93"/>
+        <image name="trending-up" width="28" height="28"/>
+    </resources>
+</document>

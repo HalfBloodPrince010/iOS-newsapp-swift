@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c29-57-7zC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bookmarks-->
+        <scene sceneID="UmW-Rm-Fq0">
+            <objects>
+                <viewController id="LbG-oR-XjH" customClass="BookmarksViewController" customModule="iOS_NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQe-Ei-xts">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lyK-zn-PIR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h5Q-jz-T2v">
+                                    <size key="itemSize" width="190" height="250"/>
+                                    <size key="headerReferenceSize" width="2" height="10"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bookmarkcell" id="5Zl-8Y-p05" customClass="BookmarkCell" customModule="iOS_NewsApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="10" width="190" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BYx-oD-BAH">
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-mT-njo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zy3-4V-q88">
+                                                            <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="140" id="g4s-oK-dZW"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvj-Bt-084">
+                                                            <rect key="frame" x="7" y="143" width="176" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWC-vU-YJM">
+                                                            <rect key="frame" x="8" y="230" width="40" height="12"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="E7i-HC-PLT"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9d-MO-9AE">
+                                                            <rect key="frame" x="58" y="230" width="25.5" height="12"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dy1-Ik-SFB">
+                                                            <rect key="frame" x="162" y="222" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="kns-hr-ghp"/>
+                                                                <constraint firstAttribute="width" constant="20" id="sWy-b7-K7L"/>
+                                                            </constraints>
+                                                            <state key="normal" title="B"/>
+                                                            <connections>
+                                                                <action selector="bookmarkButton:" destination="5Zl-8Y-p05" eventType="touchUpInside" id="wV6-VJ-yvg"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bWC-vU-YJM" firstAttribute="leading" secondItem="f3g-mT-njo" secondAttribute="leading" constant="8" id="4Qy-zd-jeV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="G9d-MO-9AE" secondAttribute="bottom" constant="8" id="4TC-8y-ygg"/>
+                                                        <constraint firstItem="zy3-4V-q88" firstAttribute="leading" secondItem="f3g-mT-njo" secondAttribute="leading" id="5l8-fD-sP5"/>
+                                                        <constraint firstItem="Lvj-Bt-084" firstAttribute="top" secondItem="zy3-4V-q88" secondAttribute="bottom" constant="3" id="KLJ-5V-Bus"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Lvj-Bt-084" secondAttribute="trailing" constant="7" id="NY2-hd-AWT"/>
+                                                        <constraint firstAttribute="bottom" secondItem="dy1-Ik-SFB" secondAttribute="bottom" constant="8" id="QKE-Iy-WSe"/>
+                                                        <constraint firstItem="G9d-MO-9AE" firstAttribute="leading" secondItem="bWC-vU-YJM" secondAttribute="trailing" constant="10" id="V1E-KN-L5A"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dy1-Ik-SFB" secondAttribute="trailing" constant="8" id="gtm-WO-iF1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zy3-4V-q88" secondAttribute="trailing" id="gts-OE-jSu"/>
+                                                        <constraint firstItem="zy3-4V-q88" firstAttribute="top" secondItem="f3g-mT-njo" secondAttribute="top" id="huk-vm-SRz"/>
+                                                        <constraint firstItem="Lvj-Bt-084" firstAttribute="leading" secondItem="f3g-mT-njo" secondAttribute="leading" constant="7" id="kla-8B-X2F"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bWC-vU-YJM" secondAttribute="bottom" constant="8" id="pQw-pA-JHi"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f3g-mT-njo" firstAttribute="top" secondItem="BYx-oD-BAH" secondAttribute="top" id="6d9-Gx-efQ"/>
+                                                <constraint firstItem="f3g-mT-njo" firstAttribute="leading" secondItem="BYx-oD-BAH" secondAttribute="leading" id="XsE-zW-iNU"/>
+                                                <constraint firstAttribute="bottom" secondItem="f3g-mT-njo" secondAttribute="bottom" id="ngw-Y3-q8S"/>
+                                                <constraint firstAttribute="trailing" secondItem="f3g-mT-njo" secondAttribute="trailing" id="xsD-aO-JCu"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="190" height="250"/>
+                                        <connections>
+                                            <outlet property="bookmarkButton" destination="dy1-Ik-SFB" id="fBX-54-hDu"/>
+                                            <outlet property="bookmarkDate" destination="bWC-vU-YJM" id="Pme-zU-Rcw"/>
+                                            <outlet property="bookmarkImage" destination="zy3-4V-q88" id="Ht9-KO-WMj"/>
+                                            <outlet property="bookmarkSection" destination="G9d-MO-9AE" id="c25-0W-9VN"/>
+                                            <outlet property="bookmarkTitle" destination="Lvj-Bt-084" id="cQQ-4o-Ddz"/>
+                                            <outlet property="bookmarkView" destination="BYx-oD-BAH" id="pMc-Ia-pXJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0BY-S2-cef">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lyK-zn-PIR" firstAttribute="top" secondItem="fwR-db-Bjr" secondAttribute="top" id="9qM-SK-u4l"/>
+                            <constraint firstItem="lyK-zn-PIR" firstAttribute="trailing" secondItem="fwR-db-Bjr" secondAttribute="trailing" id="BFI-rG-B1A"/>
+                            <constraint firstItem="lyK-zn-PIR" firstAttribute="leading" secondItem="fwR-db-Bjr" secondAttribute="leading" id="WnO-Le-4uA"/>
+                            <constraint firstItem="lyK-zn-PIR" firstAttribute="bottom" secondItem="fwR-db-Bjr" secondAttribute="bottom" id="lge-e3-X90"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fwR-db-Bjr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="vxQ-zo-eOI"/>
+                    <connections>
+                        <outlet property="bookmarkCollectionView" destination="lyK-zn-PIR" id="jtD-QR-sND"/>
+                        <segue destination="EPe-e0-Wq5" kind="show" identifier="bookmarksegue" id="iJh-wY-fyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3L7-lP-vUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="-14"/>
+        </scene>
+        <!--DetailedPage-->
+        <scene sceneID="QS8-aH-Z62">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailedPage" id="EPe-e0-Wq5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Pcu-eI-dkK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3CX-up-eRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2071" y="-49"/>
+        </scene>
+        <!--Bookmarks-->
+        <scene sceneID="bvG-RL-SOf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c29-57-7zC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="bookmark.fill" catalog="system" id="9S0-z7-vT6"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IRA-qo-KLk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LbG-oR-XjH" kind="relationship" relationship="rootViewController" id="Wvl-fX-ti5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvd-aO-H1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="-14.0625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+    </resources>
+</document>
